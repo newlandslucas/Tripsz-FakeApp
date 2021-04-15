@@ -37,17 +37,17 @@ export default function Home() {
                 <Options 
                     cover={require('../assets/Ecoturismo.jpg')}
                     title="Ecoturismo"
-                    onPress={() => {}}
+                    onPress={() => alert('Em Breve')}
                 />
                 <Options 
                     cover={require('../assets/Cachoeira.jpg')}
                     title="Cachoeiras"
-                    onPress={() => {}}
+                    onPress={() => alert('Em Breve')}
                 />
                 <Options 
                     cover={require('../assets/Excursao.jpg')}
                     title="Excursão"
-                    onPress={() => {}}
+                    onPress={() => alert('Em Breve')}
                 />
             </ScrollView>
             <ScrollView vertical showsVerticalScrollIndicator={false} style={{paddingHorizontal: 15}}>
@@ -55,6 +55,7 @@ export default function Home() {
                 <Text style={styles.title2}>Visto Recentemente</Text>
             </View>
             </ScrollView>
+
         </ScrollView>
     )
 }
