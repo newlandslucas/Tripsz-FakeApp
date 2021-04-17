@@ -5,18 +5,12 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 export default function Detail() {
     return(
-        <>
-        <View style={styles.wallpaper}>
-            <Image 
-                source={require('../assets/praiaRj.jpg')}
-                styles={styles.imageWallpaper}
-            />
-        </View>
-            <ScrollView
-            vertical
-            showsVerticalScrollIndicator={false}
-            style={{backgroundColor: '#EDF2F7'}}
-            >
+        <ScrollView
+        vertical
+        showsVerticalScrollIndicator={false}
+        style={{backgroundColor: '#EDF2F7'}}
+        >
+            <>
                 <View style={styles.header}>
                     <View style={styles.inputArea}>
                         <Feather name="search" size={24} color="#0BC5EA"/>
@@ -47,8 +41,8 @@ export default function Detail() {
                     <View style={styles.footer}>
                             <Text style={styles.footerText}>Não encontrou a viagem que procurava? Vamos te ajudar! Clique aqui e nos informe a viagem que quer fazer</Text>
                         </View>
+                </>
             </ScrollView>
-        </>
         
     )
 }
@@ -80,7 +74,6 @@ const styles = StyleSheet.create({
         borderRadius: 15,
     },
     input: {
-        fontFamily: 'Montserrat_500Medium',
         paddingHorizontal: 10,
         fontSize: 15,
         width: '90%',

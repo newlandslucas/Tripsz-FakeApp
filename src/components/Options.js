@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
     container: {
         marginTop: 20,
         backgroundColor: '#FFFFFF',
-        height: 230,
-        width: 200,
+        height: 170,
+        width: 180,
         elevation: 2,
         borderRadius: 10,
         marginRight: 30,
@@ -49,6 +49,5 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'center',
         fontSize: 16,
-        fontFamily: 'Montserrat_500Regular'
     }
 })

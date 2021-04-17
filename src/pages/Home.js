@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { ScrollView, TextInput } from 'react-native-gesture-handler';
-import { Feather } from '@expo/vector-icons';
+import { ScrollView  } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 
+import InputSearch from '../components/InputSearch'
 import Options from '../components/Options';
 
 
@@ -14,14 +14,9 @@ export default function Home() {
             showsHorizontalScrollIndicator={false}
             style={{backgroundColor: '#EDF2F7'}}
         >
+            <InputSearch style={styles.inputArea}/>
             <View style={styles.header}>
-                <View style={styles.inputArea}>
-                    <Feather name="search" size={24} color="#0BC5EA"/>
-                    <TextInput 
-                        placeholder="Digite o destino"
-                        style={styles.input}
-                    />
-                </View>
+                
             </View>
             
             <View styles={styles.contentNew}>
@@ -61,6 +56,9 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
+inputArea: {
+    marginTop: 15,
+},
 header:{
     paddingHorizontal: 15,
     flexDirection: 'row',
@@ -69,34 +67,15 @@ header:{
     width: '100%',
     marginVertical: 20,
 },
-inputArea: {
-    paddingHorizontal: 15,
-    flexDirection: 'row',
-    alignItems: 'center',
-    width: '98%',
-    backgroundColor: '#FFFFFF',
-    elevation: 2,
-    paddingHorizontal: 10,
-    height: 37,
-    borderRadius: 15,
-},
-input: {
-    fontFamily: 'Montserrat_500Medium',
-    paddingHorizontal: 10,
-    fontSize: 15,
-    width: '90%',
-},
 contentNew: {
     flexDirection: 'row',
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-
 },
 title1: {
     textAlign: 'center',
     paddingHorizontal: 15,
-    fontFamily: 'Montserrat_700Bold',
     fontSize: 18,
 },
 recentView: {
@@ -110,7 +89,6 @@ recentView: {
 title2: {
     textAlign: 'center',
     paddingHorizontal: 15,
-    fontFamily: 'Montserrat_700Bold',
     fontSize: 18,
 }
 });

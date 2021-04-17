@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Ionicons } from '@expo/vector-icons';
 import { TouchableOpacity} from 'react-native';
+import { View, Text} from 'react-native'
 
 import Home from './pages/Home';
 import Detail from './pages/Detail';
@@ -18,19 +19,12 @@ function Routes() {
                  name="home" 
                  component={Home}
                  options={{
-                     title: 'HOME',
+                     title: '',
                      headerTitleStyle: {
                          fontFamily: 'Montserrat_700Bold',
                      },
-                     headerRight: () => (
-                        <TouchableOpacity>
-                            <Ionicons 
-                            name="airplane" 
-                            size={30} 
-                            color="#0BC5EA" 
-                            style={{marginRight: 25}} 
-                            />
-                        </TouchableOpacity>
+                     headerLeft: () => (
+                        <Text>Olá, Lucas!</Text>
                      )
                  }}
                  />
