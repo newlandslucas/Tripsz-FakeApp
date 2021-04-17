@@ -5,12 +5,15 @@ import { useNavigation } from '@react-navigation/native';
 
 import InputSearch from '../components/InputSearch'
 import Options from '../components/Options';
+//import Footer from '../components/Footer';
 
 
 export default function Home() {
-    const navigation = useNavigation();
+    //const navigation = useNavigation();
     return(
+        <>
         <ScrollView
+
             showsHorizontalScrollIndicator={false}
             style={{backgroundColor: '#FFFFFF'}}
         >
@@ -27,7 +30,7 @@ export default function Home() {
                 <Options 
                     cover={require('../assets/praiaRj.jpg')}
                     title="Descanso"
-                    onPress={() => navigation.navigate('detail')}
+                    onPress={() => alert('Em breve')}
                 />
                 <Options 
                     cover={require('../assets/Ecoturismo.jpg')}
@@ -52,6 +55,7 @@ export default function Home() {
             </ScrollView>
 
         </ScrollView>
+        </>
     )
 }
 
