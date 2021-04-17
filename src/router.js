@@ -21,10 +21,19 @@ function Routes() {
                  options={{
                      title: '',
                      headerTitleStyle: {
-                         fontFamily: 'Montserrat_700Bold',
+                         backgroundColor: '#FFFFFF',
+                         marginLeft: 15
                      },
-                     headerLeft: () => (
-                        <Text>Olá, Lucas!</Text>
+                     headerLeft: () => {
+                         return(
+                             <>
+                            <Text style={{marginLeft: 15, fontWeight: 'bold', fontSize: 16, opacity: 0.9, }}>Olá, Lucas!</Text>
+                            <Text style={{marginLeft: 15, marginTop: 5, fontSize: 12, }}>Brasília - DF</Text>
+                            </>
+                         )
+                     },
+                     headerRight:  () => (
+                         <Text style={{marginRight: 20, fontWeight: 'bold', fontSize: 16, opacity: 0.9}}>Lucas</Text>
                      )
                  }}
                  />

@@ -12,7 +12,7 @@ export default function Home() {
     return(
         <ScrollView
             showsHorizontalScrollIndicator={false}
-            style={{backgroundColor: '#EDF2F7'}}
+            style={{backgroundColor: '#FFFFFF'}}
         >
             <InputSearch style={styles.inputArea}/>
             <View style={styles.header}>
