@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Alert } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { ScrollView  } from 'react-native-gesture-handler';
 
 import InputSearch from '../components/InputSearch';

@@ -84,7 +84,7 @@ function Routes() {
                      headerRight:  () => (
                          <>
                          <View style={{width: 55, height: 55, marginRight: 28}}>
-                             <Image source={require('./assets/user.jpg')} style={{width: '100%', height: '100%', borderRadius: '50%'}}/>
+                             <Image source={require('./assets/user.jpg')} style={{width: '100%', height: '100%', borderRadius: 50}}/>
                          </View>
                          <Text style={{marginRight: 25, marginTop: 5, fontSize: 14, marginBottom: 10,color: '#0BC5EA'}}>R$: 75,00</Text>
                          </>
