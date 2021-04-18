@@ -3,9 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 import { ScrollView  } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 
+import Header from '../components/Header';
 import InputSearch from '../components/InputSearch'
 import Options from '../components/Options';
-//import Footer from '../components/Footer';
 
 
 export default function Home() {

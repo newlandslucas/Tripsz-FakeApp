@@ -1,10 +1,24 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function Perfil() {
     return(
-        <View>
-            <Text>Perfil</Text>
+        <View style={styles.content}>
+            <Text style={styles.textStyle}>Em breve!</Text>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    content: {
+        flex: 1,
+        backgroundColor: "#4299E1",
+        textAlign: 'center',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    textStyle: {
+        fontSize: 24,
+        fontWeight: 'bold'
+    }
+})
