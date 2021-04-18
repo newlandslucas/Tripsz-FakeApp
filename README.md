@@ -7,6 +7,7 @@
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.io/)
 - [React Navigation](https://reactnavigation.org/)
+- [Expo Local Authentication](https://docs.expo.io/versions/latest/sdk/local-authentication/)
 
 ## ⌨️ Installation and execution
 
