@@ -1,24 +1,19 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet, TextInput} from 'react-native';
-import { Feather } from '@expo/vector-icons';
+import { View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+
+import InputSearch from '../components/InputSearch';
 
 export default function Detail() {
     return(
         <ScrollView
         vertical
         showsVerticalScrollIndicator={false}
-        style={{backgroundColor: '#EDF2F7'}}
+        style={{backgroundColor: '#FFFFFF'}}
         >
             <>
+            <InputSearch />
                 <View style={styles.header}>
-                    <View style={styles.inputArea}>
-                        <Feather name="search" size={24} color="#0BC5EA"/>
-                        <TextInput 
-                            placeholder="Digite o destino"
-                            style={styles.input}
-                        />
-                    </View>
                 </View>
                     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.cards}>
                         <TouchableOpacity style={styles.container}>

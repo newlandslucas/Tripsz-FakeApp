@@ -1,15 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { ScrollView  } from 'react-native-gesture-handler';
-import { useNavigation } from '@react-navigation/native';
 
-import Header from '../components/Header';
 import InputSearch from '../components/InputSearch'
 import Options from '../components/Options';
+import Card1 from '../components/Card1';
+import Card2 from '../components/Card2';
 
 
 export default function Home() {
-    //const navigation = useNavigation();
+
     return(
         <>
         <ScrollView
@@ -50,7 +50,12 @@ export default function Home() {
             </ScrollView>
             <ScrollView vertical showsVerticalScrollIndicator={false} style={{paddingHorizontal: 15}}>
             <View styles={styles.recentView}>
-                <Text style={styles.title2}>Visto Recentemente</Text>
+                <Text style={styles.title2}>Destaques da semana</Text>
+                <Card1 />
+            </View>
+            <View styles={styles.recentView}>
+                <Text style={styles.title2}>Vistos recentemente</Text>
+                <Card2 />
             </View>
             </ScrollView>
 
@@ -60,39 +65,33 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
-inputArea: {
-    marginTop: 15,
-},
-header:{
-    paddingHorizontal: 15,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '100%',
-    marginVertical: 20,
-},
-contentNew: {
-    flexDirection: 'row',
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-},
-title1: {
-    textAlign: 'center',
-    paddingHorizontal: 15,
-    fontSize: 18,
-},
-recentView: {
-    marginTop: 15,
-    flexDirection: 'row',
-    width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-    
-},
-title2: {
-    textAlign: 'center',
-    paddingHorizontal: 15,
-    fontSize: 18,
-}
+
+    inputArea: {
+        marginTop: 15,
+    },
+
+    contentNew: {
+        flexDirection: 'row',
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    title1: {
+        textAlign: 'center',
+        paddingHorizontal: 15,
+        fontSize: 18,
+    },
+    recentView: {
+        marginTop: 15,
+        flexDirection: 'row',
+        width: '100%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        
+    },
+    title2: {
+        textAlign: 'center',
+        paddingHorizontal: 15,
+        fontSize: 18,
+    }
 });
