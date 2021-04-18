@@ -19,7 +19,7 @@ export default function App() {
     if(sucess) {
       Alert.alert('Autenticação realizada com sucesso!')
     } 
-    
+
     setIsModalVisible(false);
   }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Image } from 'react-native'
+import { Text, Image, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -68,6 +68,9 @@ function Routes() {
                  component={Tabs}
                  options={{
                      title: '',
+                     headerStyle: {
+                         height: 120
+                     },
                      headerTitleStyle: {
                          backgroundColor: '#FFFFFF',
                          marginLeft: 15,
@@ -80,8 +83,10 @@ function Routes() {
                      ),
                      headerRight:  () => (
                          <>
-                         <Text style={{marginRight: 20, fontWeight: 'bold', fontSize: 18, opacity: 0.9}}>Lucas</Text>
-                         <Text style={{marginRight: 20, marginTop: 5, fontSize: 14, color: '#0BC5EA'}}>R$: 75,00</Text>
+                         <View style={{width: 55, height: 55, marginRight: 28}}>
+                             <Image source={require('./assets/user.jpg')} style={{width: '100%', height: '100%', borderRadius: '50%'}}/>
+                         </View>
+                         <Text style={{marginRight: 25, marginTop: 5, fontSize: 14, marginBottom: 10,color: '#0BC5EA'}}>R$: 75,00</Text>
                          </>
                      )
                  }}
