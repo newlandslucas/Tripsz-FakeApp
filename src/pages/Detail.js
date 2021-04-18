@@ -136,6 +136,4 @@ const styles = StyleSheet.create({
     footerText: {
         fontSize: 12
     },
-
-
 })

@@ -26,11 +26,11 @@ const styles = StyleSheet.create({
         marginTop: 20,
         backgroundColor: '#FFFFFF',
         height: 400,
-        width: 350,
+        width: '98%',
         elevation: 2,
         borderRadius: 15,
         marginRight: 3,
-        marginLeft: 3,
+        marginLeft: 5,
         marginBottom: 5,
     },
     cover: {
@@ -72,6 +72,5 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 13
     },
-
 })
 

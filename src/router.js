@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native'
+import { Text, Image } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -72,16 +72,17 @@ function Routes() {
                          backgroundColor: '#FFFFFF',
                          marginLeft: 15,
                      },
-                     headerLeft: () => {
-                         return(
-                             <>
+                     headerLeft: () => (
+                         <>
                             <Text style={{marginLeft: 15, fontWeight: 'bold', fontSize: 18, opacity: 0.9, }}>Olá, Lucas!</Text>
-                            <Text style={{marginLeft: 15, marginTop: 5, fontSize: 16, marginBottom: 10 }}>Brasília - DF</Text>
-                            </>
-                         )
-                     },
+                            <Text style={{marginLeft: 15, marginTop: 5, fontSize: 16, marginBottom: 10, color: '#0BC5EA' }}>Brasília - DF</Text>
+                        </>
+                     ),
                      headerRight:  () => (
+                         <>
                          <Text style={{marginRight: 20, fontWeight: 'bold', fontSize: 18, opacity: 0.9}}>Lucas</Text>
+                         <Text style={{marginRight: 20, marginTop: 5, fontSize: 14, color: '#0BC5EA'}}>R$: 75,00</Text>
+                         </>
                      )
                  }}
                 />

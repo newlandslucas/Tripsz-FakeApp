@@ -18,10 +18,8 @@ export default function App() {
 
     if(sucess) {
       Alert.alert('Autenticação realizada com sucesso!')
-    } else {
-      Alert.alert('A autenticação falhou')
-    }
-
+    } 
+    
     setIsModalVisible(false);
   }
 

@@ -1,22 +1,17 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, Alert } from 'react-native';
 import { ScrollView  } from 'react-native-gesture-handler';
 
-import InputSearch from '../components/InputSearch'
+import InputSearch from '../components/InputSearch';
 import Options from '../components/Options';
 import Card1 from '../components/Card1';
 import Card2 from '../components/Card2';
-
 
 export default function Home() {
 
     return(
         <>
-        <ScrollView
-
-            showsHorizontalScrollIndicator={false}
-            style={{backgroundColor: '#FFFFFF'}}
-        >
+        <ScrollView showsVerticalScrollIndicator={false} style={{backgroundColor: '#FFFFFF'}}>
             <InputSearch style={styles.inputArea}/>
             <View style={styles.header}>
                 
@@ -58,18 +53,12 @@ export default function Home() {
                 <Card2 />
             </View>
             </ScrollView>
-
         </ScrollView>
         </>
     )
 }
 
 const styles = StyleSheet.create({
-
-    inputArea: {
-        marginTop: 15,
-    },
-
     contentNew: {
         flexDirection: 'row',
         width: '100%',
